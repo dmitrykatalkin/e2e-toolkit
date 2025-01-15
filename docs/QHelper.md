@@ -28,7 +28,7 @@ q`%(foo=bar,baz=qux)` === '[data-test-foo=bar][data-test-baz=qux]'
 A good example of using such attributes is the `data-test-status` attribute of grids.
 When you need to be sure if a grid has been populated by data you can do this (`%%` syntax explained below):
 ```ts
-q`%%agGrid=orders%(status=loaded)`
+q`%%ag-grid=orders%(status=loaded)`
 ```
 
 ### Pseudo Selectors `%%`
@@ -38,11 +38,11 @@ Example:
 ```ts
 const { q, r } = e2eHelpersFactory({
   pseudoSelectorMap: {
-    'agGrid': '.ag-grid',
-    'agGrid-filtersColumn': '[ref="eHeaderViewport"] .ag-header-row-floating-filter .ag-header-cell',
+    'ag-grid': '.ag-grid',
+    'ag-grid-filters-column': '[ref="eHeaderViewport"] .ag-header-row-floating-filter .ag-header-cell',
   }
 });
 
-cy.$get(q`%%agGrid=orders %%agGrid-filtersColumn:nth-child(1) input`).type(123)
+cy.$get(q`%%ag-grid=orders %%ag-grid-filters-column:nth-child(1) input`).type(123)
 ```
 

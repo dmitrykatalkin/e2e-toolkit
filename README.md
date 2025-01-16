@@ -9,8 +9,8 @@ less tricky and more comfortable, so you can focus on testing scenarios.
 
 Tools:
 - [Q Helper](docs/QHelper.md) // Provides shortcuts for css-queries
-- [R Helper](docs/RHelper.md) // Provides shortcuts for url-patterns
-- [Element Lookup Assistant](https://github.com/FletcherTools/e2e-toolkit-ela) // Helps to figure out element's test-id without digging into the elements' tree.
+- [R Helper](docs/RHelper.md) // Provides shortcuts for url-patternss
+- [Element Lookup Assistant](https://github.com/dmitrykatalkin/e2e-toolkit-ela) // Helps to figure out element's test-id without digging into the elements' tree.
 
 ## Helpers
 ### Initialization
